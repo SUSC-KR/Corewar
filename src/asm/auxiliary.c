@@ -5,7 +5,7 @@ bool is_delimiter(char c)
 {
     return (isspace(c) || c == '"' || c == '\0' || 
             c == DIRECT_CHAR || c == SEPARATOR_CHAR || 
-            c == COMMENT_CHAR || c == ANOTHER_COMMENT_CHAR);
+            c == COMMENT_CHAR || c);
 }
 
 // divide_str: 문자열을 줄 단위로 나누기
@@ -153,7 +153,7 @@ int skip_whitespaces(int *col, char *row)
 // skip_comment: 주석을 건너뛰고 열 위치를 업데이트
 int skip_comment(int *col, const char *row)
 {
-    if (row[*col] == COMMENT_CHAR || row[*col] == ANOTHER_COMMENT_CHAR)
+    if (row[*col] == COMMENT_CHAR )
     {
         while (row[*col] != '\0' && row[*col] != '\n')
             (*col)++;
