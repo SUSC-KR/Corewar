@@ -1,6 +1,26 @@
 ### **Corewar 게임 사용자 설명서**
 
 Corewar은 두 개 이상의 프로그램이 가상 머신 환경에서 서로 경쟁하는 전투 게임입니다. 각 프로그램은 **워리어**라고 불리며, 다양한 명령어를 사용하여 상대방을 공격하거나 방어하며 살아남는 것이 목표입니다. 이 설명서는 **Corewar**의 게임 방식과 이를 플레이하는 방법을 이해할 수 있도록 돕기 위해 작성되었습니다.
+---
+
+### **0. 살행 방법**
+
+1. Corewar 다운로드
+```
+git clone https://github.com/SUSC-KR/Corewar.git
+cd Corewar
+make
+```
+
+2. **asm**과 **corewar** 실행
+```
+./asm [filename.s]
+```
+
+```
+./corewar [filename.core] [filename.core]
+```
+
 
 ---
 
